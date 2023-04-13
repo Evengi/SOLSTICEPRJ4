@@ -84,7 +84,7 @@ a.tm-text-light-dark:hover { color: #747474; }
 }
 .tm-bar-3 {
   background-color: #F0C404;
-  width: 150%;
+  width: 100%;
   height: 15px;
   margin-top: 40px;
   margin-bottom: 0px;
@@ -402,6 +402,7 @@ figure.effect-lexi:hover figcaption::before {
   background: rgba(0,0,0,0.25);
 }
 
+
 figure.effect-lexi p {
     position: absolute;
     right: 0;
@@ -544,8 +545,7 @@ figure.effect-lexi figcaption::before, figure.effect-lexi p {
   .tm-section-2-right {
     width: 100%;
     margin-top: 40px;
-    margin-left: 0;
-	margin-bottom: 50px;  
+    margin-left: 0; 
   }
 
   .tm-section-2-left {
@@ -676,7 +676,7 @@ pricing
 .pricing-item .pricing-body .price-wrapper {
   text-align: center;
   padding-top: 20px;
-  padding-bottom: 13px;
+  padding-bottom: 20px;
   background: #130D30;
   width: 80%;
   margin: auto;
@@ -751,7 +751,92 @@ pricing
 	max-width: 100%;
 }
 
+
 .img-fit-2{
 	max-height: 110%;
 	max-width: 110%;
+}
+
+
+.popup {
+			display: none;
+			position: fixed;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			background-color: #F0C404;
+			padding: 20px;
+			box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+		}
+		
+.show-popup {
+			display: block;
+		}
+
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  top: 50px;
+  right: 550px;
+  border: 3px solid #F0C404;
+  z-index: 9;
+}
+
+.open-button {
+  background-color: #130D30;
+  color: #F0C404;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 20px;
+  background-color: #130D30;
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+.btn-donate{
+	margin-top: 20px;
 }
